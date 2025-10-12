@@ -6,6 +6,8 @@ node_modules/
 dist/
 build/
 *.tsbuildinfo
+# Allow core package dist
+!packages/core/dist/
 
 # Environment variables
 .env
@@ -87,7 +89,6 @@ tmp/
 temp/
 
 # Project specific
-packages/**/dist/
 packages/**/build/
 packages/**/*.tsbuildinfo
 packages/**/.turbo
