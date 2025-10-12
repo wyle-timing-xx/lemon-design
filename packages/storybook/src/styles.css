@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Storybook 特定样式 */
+.sb-show-main {
+  background: #f8fafc;
+}
+
+/* 组件展示区域 */
+.story-container {
+  @apply p-4 bg-white rounded-lg shadow-sm border;
+}
+
+/* 代码块样式 */
+.story-code {
+  @apply mt-4 p-4 bg-gray-100 rounded-md text-sm font-mono;
+}
