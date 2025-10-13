@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from '@lemon-design/core';
+import { Button } from '@lemon-design-xx/core';
 import React from 'react';
 
 const meta: Meta<typeof Button> = {

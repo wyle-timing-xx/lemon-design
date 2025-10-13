@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Card } from '@lemon-design/core';
-import { Button } from '@lemon-design/core';
+import { Card } from '@lemon-design-xx/core';
+import { Button } from '@lemon-design-xx/core';
 import React from 'react';
 
 const meta: Meta<typeof Card> = {

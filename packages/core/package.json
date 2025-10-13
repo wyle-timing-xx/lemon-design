@@ -1,14 +1,23 @@
 {
   "name": "@lemon-design-xx/core",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Core components for Lemon Design System",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemon-design-xx/lemon-design.git"
+  },
+  "homepage": "https://github.com/lemon-design-xx/lemon-design#readme",
+  "bugs": {
+    "url": "https://github.com/lemon-design-xx/lemon-design/issues"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -27,13 +36,13 @@
     "@emotion/styled": "^11.0.0"
   },
   "dependencies": {
+    "clsx": "^2.0.0"
+  },
+  "devDependencies": {
     "@mui/material": "^5.15.0",
     "@mui/icons-material": "^5.15.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
-    "clsx": "^2.0.0"
-  },
-  "devDependencies": {
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@rollup/plugin-commonjs": "^25.0.0",

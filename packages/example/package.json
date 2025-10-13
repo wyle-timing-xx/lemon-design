@@ -1,5 +1,5 @@
 {
-  "name": "@lemon-design/example",
+  "name": "@lemon-design-xx/example",
   "version": "1.0.0",
   "private": true,
   "description": "Example application using Lemon Design System",
@@ -11,7 +11,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
-    "@lemon-design/core": "workspace:*",
+    "@lemon-design-xx/core": "workspace:*",
     "@mui/material": "^5.15.0",
     "@mui/icons-material": "^5.15.0",
     "@emotion/react": "^11.11.0",

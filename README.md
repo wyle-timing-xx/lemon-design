@@ -42,9 +42,9 @@ pnpm install
 pnpm dev
 
 # 或者单独启动某个包
-pnpm --filter @lemon-design/core dev
-pnpm --filter @lemon-design/storybook storybook
-pnpm --filter @lemon-design/example dev
+pnpm --filter @lemon-design-xx/core dev
+pnpm --filter @lemon-design-xx/storybook storybook
+pnpm --filter @lemon-design-xx/example dev
 ```
 
 ### 构建
@@ -54,13 +54,13 @@ pnpm --filter @lemon-design/example dev
 pnpm build
 
 # 构建特定包
-pnpm --filter @lemon-design/core build
+pnpm --filter @lemon-design-xx/core build
 ```
 
 ## 📚 使用组件
 
 ```tsx
-import { Button, Card, Input } from '@lemon-design/core';
+import { Button, Card, Input } from '@lemon-design-xx/core';
 
 function App() {
   return (
