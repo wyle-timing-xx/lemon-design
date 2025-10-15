@@ -1,6 +1,6 @@
 # @lemon-design-xx/core
 
-现代 React 组件库，基于 MUI + TailwindCSS 构建，提供常用 UI 组件与类型支持。
+现代 React 组件库，基于 TailwindCSS 构建，提供常用 UI 组件与类型支持。
 
 ## 特性
 - 基于 Material UI 与 Tailwind 的现代样式
@@ -20,9 +20,7 @@ pnpm add @lemon-design-xx/core
 
 - `react` >= 18
 - `react-dom` >= 18
-- `@mui/material` ^5
-- `@emotion/react` ^11
-- `@emotion/styled` ^11
+
 
 ## 使用示例
 
@@ -53,7 +51,7 @@ export default function App() {
 - 可配置边框与阴影
 
 ### Input
-- 基于 MUI `TextField`
+- 基于原生 input
 - 支持验证与错误提示、帮助文本
 
 ## 样式与 Tailwind

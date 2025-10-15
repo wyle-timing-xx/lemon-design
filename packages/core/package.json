@@ -1,7 +1,7 @@
 {
   "name": "@lemon-design-xx/core",
   "version": "1.0.2",
-  "description": "Core components for Lemon Design System",
+  "description": "Modern React component library built with TailwindCSS",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -65,7 +65,7 @@
   "keywords": [
     "react",
     "components",
-    "mui",
+    
     "tailwind",
     "design-system"
   ],
