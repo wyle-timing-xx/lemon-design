@@ -1,6 +1,6 @@
 {
   "name": "@lemon-design-xx/core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Modern React component library built with TailwindCSS",
   "type": "module",
   "main": "dist/index.js",
@@ -11,6 +11,10 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.esm.js",
       "require": "./dist/index.js"
+    },
+    "./dist/index.css": {
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
     }
   },
   "files": [
