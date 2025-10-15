@@ -1,7 +1,7 @@
 {
   "name": "lemon-design",
   "version": "1.0.0",
-  "private": true,
+  
   "description": "A modern React component library built with MUI and TailwindCSS - lemon design system",
   "workspaces": [
     "packages/*"
