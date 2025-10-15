@@ -14,8 +14,8 @@
     "build-storybook": "lerna run build-storybook --scope=@lemon-design-xx/storybook",
     "test": "lerna run test",
     "clean": "lerna clean",
-    "publish": "lerna publish",
-    "version": "lerna version"
+    "publish": "lerna version --force-publish @lemon-design-xx/core --yes && lerna publish from-git --yes",
+    "version": "echo skipping custom version script"
   },
   "devDependencies": {
     "lerna": "^8.0.0",
