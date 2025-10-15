@@ -26,7 +26,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     variant = 'primary', 
     size = 'md', 
     loading = false,
-    loadingText = '加载中 text...',
+    loadingText = '加载中 test...',
     children,
     disabled,
     ...props 
