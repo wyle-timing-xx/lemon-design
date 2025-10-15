@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/lemon-design-xx/lemon-design/compare/v1.1.1...v1.2.0) (2025-10-15)
+
+
+### Features
+
+* modify text ([e677cfc](https://github.com/lemon-design-xx/lemon-design/commit/e677cfc1e3691f61edb58fb84a4a6661faee7253))
+
+
+
+
+
 ## [1.1.1](https://github.com/lemon-design-xx/lemon-design/compare/v1.1.0...v1.1.1) (2025-10-15)
 
 **Note:** Version bump only for package @lemon-design-xx/core
