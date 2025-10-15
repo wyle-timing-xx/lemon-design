@@ -6,10 +6,11 @@ import dts from 'rollup-plugin-dts';
 import postcss from 'rollup-plugin-postcss';
 import { readFileSync } from 'fs';
 
+const isWatch = !!process.env.ROLLUP_WATCH;
+
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'));
 
-export default [
-  {
+const mainConfig = {
     input: 'src/index.ts',
     output: [
       {
@@ -37,12 +38,14 @@ export default [
         tsconfig: './tsconfig.json',
       }),
     ],
-    external: ['react', 'react-dom', '@mui/material', '@emotion/react', '@emotion/styled'],
-  },
-  {
-    input: 'dist/index.d.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
-    plugins: [dts()],
-    external: [/\.css$/],
-  },
-];
+    external: ['react', 'react-dom'],
+};
+
+const dtsConfig = {
+  input: 'dist/index.d.ts',
+  output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+  plugins: [dts()],
+  external: [/\.css$/],
+};
+
+export default isWatch ? [mainConfig] : [mainConfig, dtsConfig];

@@ -1,8 +1,7 @@
 import React from 'react';
-import { TextField, TextFieldProps } from '@mui/material';
 import { cn } from '../utils';
 
-export interface InputProps extends Omit<TextFieldProps, 'variant' | 'size'> {
+export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   /**
    * 输入框变体
    */
@@ -39,6 +38,14 @@ export interface InputProps extends Omit<TextFieldProps, 'variant' | 'size'> {
    * 是否禁用
    */
   disabled?: boolean;
+  /**
+   * 多行文本（渲染为 textarea）
+   */
+  multiline?: boolean;
+  /**
+   * textarea 行数（仅 multiline 为 true 时生效）
+   */
+  rows?: number;
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
@@ -53,6 +60,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     placeholder,
     required = false,
     disabled = false,
+    multiline = false,
+    rows,
     ...props 
   }, ref) => {
     const getSizeClasses = () => {
@@ -68,32 +77,65 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       }
     };
 
+    const getVariantClasses = () => {
+      switch (variant) {
+        case 'filled':
+          return 'bg-gray-50';
+        case 'standard':
+          return 'border-0 border-b border-gray-300 rounded-none';
+        case 'outlined':
+        default:
+          return '';
+      }
+    };
+
     return (
       <div className="w-full">
-        <TextField
-          ref={ref}
-          className={cn(
-            'w-full',
-            getSizeClasses(),
-            className
-          )}
-          variant={variant}
-          size={size === 'sm' ? 'small' : size === 'lg' ? 'medium' : 'medium'}
-          label={label}
-          placeholder={placeholder}
-          required={required}
-          disabled={disabled}
-          error={error}
-          helperText={error ? errorMessage : helperText}
-          InputProps={{
-            className: cn(
+        {label && (
+          <label className="block mb-1 text-sm font-medium text-gray-700">
+            {label}
+            {required && <span className="text-red-500"> *</span>}
+          </label>
+        )}
+        {multiline ? (
+          <textarea
+            ref={ref as unknown as React.Ref<HTMLTextAreaElement>}
+            className={cn(
               'lemon-input',
+              getSizeClasses(),
+              getVariantClasses(),
               error && 'border-red-500 focus-visible:ring-red-500',
-              disabled && 'opacity-50 cursor-not-allowed'
-            ),
-          }}
-          {...props}
-        />
+              disabled && 'opacity-50 cursor-not-allowed',
+              className
+            )}
+            placeholder={placeholder}
+            required={required}
+            disabled={disabled}
+            rows={rows}
+            {...(props as React.TextareaHTMLAttributes<HTMLTextAreaElement>)}
+          />
+        ) : (
+          <input
+            ref={ref}
+            className={cn(
+              'lemon-input',
+              getSizeClasses(),
+              getVariantClasses(),
+              error && 'border-red-500 focus-visible:ring-red-500',
+              disabled && 'opacity-50 cursor-not-allowed',
+              className
+            )}
+            placeholder={placeholder}
+            required={required}
+            disabled={disabled}
+            {...props}
+          />
+        )}
+        {error ? (
+          errorMessage && <p className="mt-1 text-xs text-red-600">{errorMessage}</p>
+        ) : (
+          helperText && <p className="mt-1 text-xs text-gray-500">{helperText}</p>
+        )}
       </div>
     );
   }

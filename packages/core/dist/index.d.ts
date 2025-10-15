@@ -1,12 +1,11 @@
 import React from 'react';
-import { ButtonProps as ButtonProps$1, CardProps as CardProps$1, TextFieldProps } from '@mui/material';
 import { ClassValue } from 'clsx';
 
-interface ButtonProps extends Omit<ButtonProps$1, 'variant' | 'color' | 'size'> {
+interface ButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'color'> {
     /**
      * 按钮变体
      */
-    variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+    variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'success' | 'warning' | 'error';
     /**
      * 按钮大小
      */
@@ -20,9 +19,9 @@ interface ButtonProps extends Omit<ButtonProps$1, 'variant' | 'color' | 'size'> 
      */
     loadingText?: string;
 }
-declare const Button: React.ForwardRefExoticComponent<Omit<ButtonProps, "ref"> & React.RefAttributes<HTMLButtonElement>>;
+declare const Button: React.ForwardRefExoticComponent<ButtonProps & React.RefAttributes<HTMLButtonElement>>;
 
-interface CardProps extends CardProps$1 {
+interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
     /**
      * 卡片标题
      */
@@ -44,9 +43,9 @@ interface CardProps extends CardProps$1 {
      */
     shadow?: boolean;
 }
-declare const Card: React.ForwardRefExoticComponent<Omit<CardProps, "ref"> & React.RefAttributes<HTMLDivElement>>;
+declare const Card: React.ForwardRefExoticComponent<CardProps & React.RefAttributes<HTMLDivElement>>;
 
-interface InputProps extends Omit<TextFieldProps, 'variant' | 'size'> {
+interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
     /**
      * 输入框变体
      */
@@ -83,8 +82,16 @@ interface InputProps extends Omit<TextFieldProps, 'variant' | 'size'> {
      * 是否禁用
      */
     disabled?: boolean;
+    /**
+     * 多行文本（渲染为 textarea）
+     */
+    multiline?: boolean;
+    /**
+     * textarea 行数（仅 multiline 为 true 时生效）
+     */
+    rows?: number;
 }
-declare const Input: React.ForwardRefExoticComponent<Omit<InputProps, "ref"> & React.RefAttributes<HTMLInputElement>>;
+declare const Input: React.ForwardRefExoticComponent<InputProps & React.RefAttributes<HTMLInputElement>>;
 
 /**
  * 合并类名的工具函数

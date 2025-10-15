@@ -5,7 +5,7 @@
 /* 自定义组件样式 */
 @layer components {
   .lemon-button {
-    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background;
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-white;
   }
   
   .lemon-button-primary {
@@ -18,6 +18,22 @@
   
   .lemon-button-outline {
     @apply border border-primary-600 text-primary-600 hover:bg-primary-50;
+  }
+  
+  .lemon-button-ghost {
+    @apply hover:bg-primary-50 text-primary-700;
+  }
+
+  .lemon-button-success {
+    @apply bg-success-600 text-white hover:bg-success-700;
+  }
+
+  .lemon-button-warning {
+    @apply bg-warning-600 text-white hover:bg-warning-700;
+  }
+
+  .lemon-button-error {
+    @apply bg-error-600 text-white hover:bg-error-700;
   }
   
   .lemon-card {

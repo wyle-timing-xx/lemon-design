@@ -1,6 +1,5 @@
 import React from 'react';
-import { CardProps as MuiCardProps } from '@mui/material';
-export interface CardProps extends MuiCardProps {
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
     /**
      * 卡片标题
      */
@@ -22,6 +21,6 @@ export interface CardProps extends MuiCardProps {
      */
     shadow?: boolean;
 }
-declare const Card: React.ForwardRefExoticComponent<Omit<CardProps, "ref"> & React.RefAttributes<HTMLDivElement>>;
+declare const Card: React.ForwardRefExoticComponent<CardProps & React.RefAttributes<HTMLDivElement>>;
 export { Card };
 //# sourceMappingURL=Card.d.ts.map

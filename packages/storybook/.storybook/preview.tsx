@@ -1,19 +1,7 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import '../../core/src/styles.css';
 import '../src/styles.css';
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#0ea5e9',
-    },
-    secondary: {
-      main: '#d946ef',
-    },
-  },
-});
 
 const preview: Preview = {
   parameters: {
@@ -27,12 +15,9 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <div style={{ padding: '20px' }}>
-          <Story />
-        </div>
-      </ThemeProvider>
+      <div style={{ padding: '20px' }}>
+        <Story />
+      </div>
     ),
   ],
 };

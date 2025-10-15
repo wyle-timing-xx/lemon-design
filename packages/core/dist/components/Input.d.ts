@@ -1,6 +1,5 @@
 import React from 'react';
-import { TextFieldProps } from '@mui/material';
-export interface InputProps extends Omit<TextFieldProps, 'variant' | 'size'> {
+export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
     /**
      * 输入框变体
      */
@@ -37,7 +36,15 @@ export interface InputProps extends Omit<TextFieldProps, 'variant' | 'size'> {
      * 是否禁用
      */
     disabled?: boolean;
+    /**
+     * 多行文本（渲染为 textarea）
+     */
+    multiline?: boolean;
+    /**
+     * textarea 行数（仅 multiline 为 true 时生效）
+     */
+    rows?: number;
 }
-declare const Input: React.ForwardRefExoticComponent<Omit<InputProps, "ref"> & React.RefAttributes<HTMLInputElement>>;
+declare const Input: React.ForwardRefExoticComponent<InputProps & React.RefAttributes<HTMLInputElement>>;
 export { Input };
 //# sourceMappingURL=Input.d.ts.map

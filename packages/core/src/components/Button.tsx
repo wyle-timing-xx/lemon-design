@@ -1,12 +1,11 @@
 import React from 'react';
-import { Button as MuiButton, ButtonProps as MuiButtonProps } from '@mui/material';
 import { cn } from '../utils';
 
-export interface ButtonProps extends Omit<MuiButtonProps, 'variant' | 'color' | 'size'> {
+export interface ButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'color'> {
   /**
    * 按钮变体
    */
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'success' | 'warning' | 'error';
   /**
    * 按钮大小
    */
@@ -41,7 +40,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         case 'outline':
           return 'lemon-button lemon-button-outline';
         case 'ghost':
-          return 'lemon-button hover:bg-gray-100 text-gray-700';
+          return 'lemon-button lemon-button-ghost';
+        case 'success':
+          return 'lemon-button lemon-button-success';
+        case 'warning':
+          return 'lemon-button lemon-button-warning';
+        case 'error':
+          return 'lemon-button lemon-button-error';
         default:
           return 'lemon-button lemon-button-primary';
       }
@@ -61,7 +66,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     };
 
     return (
-      <MuiButton
+      <button
         ref={ref}
         className={cn(
           getVariantClasses(),
@@ -98,7 +103,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ) : (
           children
         )}
-      </MuiButton>
+      </button>
     );
   }
 );

@@ -1,5 +1,6 @@
 import type { StorybookConfig } from '@storybook/react-vite';
 import { mergeConfig } from 'vite';
+import path from 'path';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
@@ -35,6 +36,11 @@ const config: StorybookConfig = {
             }
             warn(warning);
           },
+        },
+      },
+      resolve: {
+        alias: {
+          '@lemon-design-xx/core': path.resolve(__dirname, '../../core/src/index.ts'),
         },
       },
       optimizeDeps: {

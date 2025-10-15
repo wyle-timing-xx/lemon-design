@@ -1,10 +1,9 @@
 import React from 'react';
-import { ButtonProps as MuiButtonProps } from '@mui/material';
-export interface ButtonProps extends Omit<MuiButtonProps, 'variant' | 'color' | 'size'> {
+export interface ButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'color'> {
     /**
      * 按钮变体
      */
-    variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+    variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'success' | 'warning' | 'error';
     /**
      * 按钮大小
      */
@@ -18,6 +17,6 @@ export interface ButtonProps extends Omit<MuiButtonProps, 'variant' | 'color' | 
      */
     loadingText?: string;
 }
-declare const Button: React.ForwardRefExoticComponent<Omit<ButtonProps, "ref"> & React.RefAttributes<HTMLButtonElement>>;
+declare const Button: React.ForwardRefExoticComponent<ButtonProps & React.RefAttributes<HTMLButtonElement>>;
 export { Button };
 //# sourceMappingURL=Button.d.ts.map

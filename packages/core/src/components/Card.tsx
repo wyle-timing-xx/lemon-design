@@ -1,8 +1,7 @@
 import React from 'react';
-import { Card as MuiCard, CardProps as MuiCardProps } from '@mui/material';
 import { cn } from '../utils';
 
-export interface CardProps extends MuiCardProps {
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   /**
    * 卡片标题
    */
@@ -37,7 +36,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
     ...props 
   }, ref) => {
     return (
-      <MuiCard
+      <div
         ref={ref}
         className={cn(
           'lemon-card',
@@ -73,7 +72,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
         <div className="p-4">
           {children}
         </div>
-      </MuiCard>
+      </div>
     );
   }
 );

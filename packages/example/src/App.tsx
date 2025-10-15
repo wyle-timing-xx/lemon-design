@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Card, Input } from '@lemon-design/core'
+import { Button, Card, Input } from '@lemon-design-xx/core'
 
 function App() {
   const [formData, setFormData] = useState({
@@ -29,7 +29,7 @@ function App() {
             🍋 Lemon Design System
           </h1>
           <p className="text-xl text-gray-600">
-            基于 MUI + TailwindCSS 的现代 React 组件库
+            基于 TailwindCSS 的现代 React 组件库
           </p>
         </div>
 
@@ -146,7 +146,7 @@ function App() {
         {/* 页脚 */}
         <div className="text-center mt-12 py-8 border-t border-gray-200">
           <p className="text-gray-500">
-            © 2024 Lemon Design System. 使用 React + MUI + TailwindCSS 构建
+            © 2024 Lemon Design System. 使用 React + TailwindCSS 构建
           </p>
         </div>
       </div>

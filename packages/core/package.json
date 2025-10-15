@@ -6,6 +6,13 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    }
+  },
   "files": [
     "dist",
     "README.md"
@@ -30,19 +37,13 @@
   },
   "peerDependencies": {
     "react": ">=18.0.0",
-    "react-dom": ">=18.0.0",
-    "@mui/material": "^5.0.0",
-    "@emotion/react": "^11.0.0",
-    "@emotion/styled": "^11.0.0"
+    "react-dom": ">=18.0.0"
+    
   },
   "dependencies": {
     "clsx": "^2.0.0"
   },
   "devDependencies": {
-    "@mui/material": "^5.15.0",
-    "@mui/icons-material": "^5.15.0",
-    "@emotion/react": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@rollup/plugin-commonjs": "^25.0.0",
