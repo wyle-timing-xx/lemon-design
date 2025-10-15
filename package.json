@@ -15,7 +15,7 @@
     "test": "lerna run test",
     "clean": "lerna clean",
     "publish": "lerna version --force-publish @lemon-design-xx/core --yes && lerna publish from-git --yes",
-    "version": "echo skipping custom version script"
+    "lerna-version": "lerna version --no-private"
   },
   "devDependencies": {
     "lerna": "^8.0.0",
