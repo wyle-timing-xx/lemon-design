@@ -9,7 +9,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "dev": "lerna run dev --parallel",
+    "dev": "lerna run dev --stream",
     "storybook": "lerna run storybook --scope=@lemon-design-xx/storybook",
     "build-storybook": "lerna run build-storybook --scope=@lemon-design-xx/storybook",
     "test": "lerna run test",

@@ -1,8 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
   theme: {
     extend: {
       colors: {
@@ -71,8 +68,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-  corePlugins: {
-    preflight: false, // 禁用 Tailwind 的 preflight 样式，避免与 MUI 冲突
-  },
+  plugins: []
 }

@@ -40,7 +40,7 @@ function deepMerge(target, source) {
     return result;
 }
 
-const Button = React.forwardRef(({ className, variant = 'primary', size = 'md', loading = false, loadingText = '加载中...', children, disabled, ...props }, ref) => {
+const Button = React.forwardRef(({ className, variant = 'primary', size = 'md', loading = false, loadingText = '加载中 text...', children, disabled, ...props }, ref) => {
     const getVariantClasses = () => {
         switch (variant) {
             case 'primary':
