@@ -1,6 +1,6 @@
 {
   "name": "@lemon-design-xx/core",
-  "version": "1.2.0",
+  "version": "1.2.3",
   "description": "Modern React component library built with TailwindCSS",
   "type": "module",
   "main": "dist/index.js",
@@ -39,7 +39,8 @@
     "dev": "rollup -c -w --config-rollup.main.js --no-watch",
     "test": "jest",
     "lint": "eslint src --ext .ts,.tsx",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "version": "node ./scripts/bump-version.cjs"
   },
   "peerDependencies": {
     "react": ">=18.0.0",

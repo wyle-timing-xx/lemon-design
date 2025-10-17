@@ -92,7 +92,7 @@ git reset --hard HEAD; git clean -fd
 1) 在 `packages/core` 仅抬版本（例如补丁版）：
 
 ```
-pnpm --filter @lemon-design-xx/core version patch
+pnpm --filter @lemon-design-xx/core run version <patch|minor|major>
 ```
 
 2) 在根目录发布“所有尚未发布的新版本”（只会发布刚抬版本的包）：
