@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/lemon-design-xx/lemon-design/compare/@lemon-design-xx/core@1.3.0...@lemon-design-xx/core@1.4.1) (2025-10-17)
+
+
+### Features
+
+* added dist ([e612bc8](https://github.com/lemon-design-xx/lemon-design/commit/e612bc8e2658e5db95b6e3ee6ae11bde6e242185))
+
+
+
+
+
 ## 1.3.1 (2025-10-17)
 
 
