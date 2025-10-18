@@ -1,6 +1,6 @@
 {
   "name": "@lemon-design-xx/core",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Modern React component library built with TailwindCSS",
   "type": "module",
   "main": "dist/index.js",
