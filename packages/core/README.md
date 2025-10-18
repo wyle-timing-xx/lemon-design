@@ -3,7 +3,7 @@
 现代 React 组件库，基于 TailwindCSS 构建，提供常用 UI 组件与类型支持。
 
 ## 特性
-- 基于 Material UI 与 Tailwind 的现代样式
+- 仅使用 Tailwind 生成的样式文件，无 MUI 依赖
 - 提供 `Button`、`Card`、`Input` 等核心组件
 - 提供 ESM/CJS 构建与类型定义（`dist/index.esm.js`、`dist/index.js`、`dist/index.d.ts`）
 - 支持按需引入与类型安全
