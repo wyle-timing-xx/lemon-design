@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx release publish",
+    "startTime": "2025-10-19T08:11:16.587Z",
+    "endTime": "2025-10-19T08:11:21.085Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "@lemon-design-xx/core:nx-release-publish",
+      "target": "nx-release-publish",
+      "projectName": "@lemon-design-xx/core",
+      "hash": "7112063039430951957",
+      "startTime": "2025-10-19T08:11:16.668Z",
+      "endTime": "2025-10-19T08:11:21.082Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

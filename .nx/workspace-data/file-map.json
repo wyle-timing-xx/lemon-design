@@ -1,0 +1,363 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.6.5",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "version_bump.md",
+        "hash": "16411564933517986077"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "14003237394565843955"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "5148107720640753026"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "12486242034443176788"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "414265049992887245"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "7587669035069447529"
+      },
+      {
+        "file": "PUBLISHING.md",
+        "hash": "7557042745888994171"
+      },
+      {
+        "file": "package.json",
+        "hash": "8066043519583371082"
+      },
+      {
+        "file": "抬版本的对比和选择.md",
+        "hash": "9282629080644776538"
+      },
+      {
+        "file": "PROJECT.md",
+        "hash": "3456648993066827082"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "9729484379540479494"
+      },
+      {
+        "file": "README.md",
+        "hash": "3988714984877528499"
+      },
+      {
+        "file": "nx.json",
+        "hash": "497218710141062764"
+      },
+      {
+        "file": ".eslintrc.js",
+        "hash": "5165836759484725621"
+      }
+    ],
+    "projectFileMap": {
+      "@lemon-design-xx/core": [
+        {
+          "file": "packages/core/CHANGELOG.md",
+          "hash": "15017431616213137619"
+        },
+        {
+          "file": "packages/core/README.md",
+          "hash": "8002707707095856370"
+        },
+        {
+          "file": "packages/core/dist/components/Button.d.ts",
+          "hash": "13166845718279559534"
+        },
+        {
+          "file": "packages/core/dist/components/Button.d.ts.map",
+          "hash": "4386496483833524444"
+        },
+        {
+          "file": "packages/core/dist/components/Card.d.ts",
+          "hash": "14974470837429747488"
+        },
+        {
+          "file": "packages/core/dist/components/Card.d.ts.map",
+          "hash": "1578951375828658151"
+        },
+        {
+          "file": "packages/core/dist/components/Input.d.ts",
+          "hash": "12575218594817815434"
+        },
+        {
+          "file": "packages/core/dist/components/Input.d.ts.map",
+          "hash": "2416249421686989564"
+        },
+        {
+          "file": "packages/core/dist/index.css",
+          "hash": "17339475620861077634"
+        },
+        {
+          "file": "packages/core/dist/index.d.ts",
+          "hash": "718805171916473458"
+        },
+        {
+          "file": "packages/core/dist/index.d.ts.map",
+          "hash": "2737317774234920938"
+        },
+        {
+          "file": "packages/core/dist/index.esm.css",
+          "hash": "17339475620861077634"
+        },
+        {
+          "file": "packages/core/dist/index.esm.js",
+          "hash": "11834313709420774116"
+        },
+        {
+          "file": "packages/core/dist/index.esm.js.map",
+          "hash": "18218625601850556561"
+        },
+        {
+          "file": "packages/core/dist/index.js",
+          "hash": "391917835142599575"
+        },
+        {
+          "file": "packages/core/dist/index.js.map",
+          "hash": "18039073577788140939"
+        },
+        {
+          "file": "packages/core/dist/utils.d.ts",
+          "hash": "2796207176720824115"
+        },
+        {
+          "file": "packages/core/dist/utils.d.ts.map",
+          "hash": "10815677307904907886"
+        },
+        {
+          "file": "packages/core/package.json",
+          "hash": "11497835845905980193",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:@rollup/plugin-commonjs",
+            "npm:@rollup/plugin-node-resolve",
+            "npm:@rollup/plugin-typescript",
+            "npm:@tailwindcss/postcss",
+            "npm:@types/jest",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-plugin-react",
+            "npm:eslint-plugin-react-hooks",
+            "npm:jest",
+            "npm:rollup",
+            "npm:rollup-plugin-dts",
+            "npm:rollup-plugin-peer-deps-external",
+            "npm:rollup-plugin-postcss",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "packages/core/postcss.config.cjs",
+          "hash": "1293912633112630027"
+        },
+        {
+          "file": "packages/core/rollup.config.js",
+          "hash": "10966669383811817530"
+        },
+        {
+          "file": "packages/core/scripts/bump-version.cjs",
+          "hash": "3586405036952293848"
+        },
+        {
+          "file": "packages/core/src/components/Button.tsx",
+          "hash": "11258716351739656553"
+        },
+        {
+          "file": "packages/core/src/components/Card.tsx",
+          "hash": "12407512101958676260"
+        },
+        {
+          "file": "packages/core/src/components/Input.tsx",
+          "hash": "717303326298229569"
+        },
+        {
+          "file": "packages/core/src/index.ts",
+          "hash": "18340324059989522515"
+        },
+        {
+          "file": "packages/core/src/styles.css",
+          "hash": "17949120741508203630"
+        },
+        {
+          "file": "packages/core/src/utils.ts",
+          "hash": "13413956377518417084"
+        },
+        {
+          "file": "packages/core/tailwind.config.js",
+          "hash": "15023552771752508070"
+        },
+        {
+          "file": "packages/core/tsconfig.json",
+          "hash": "4028325301918105775"
+        }
+      ],
+      "@lemon-design-xx/example": [
+        {
+          "file": "packages/example/CHANGELOG.md",
+          "hash": "16852436695515335761"
+        },
+        {
+          "file": "packages/example/index.html",
+          "hash": "10786064019580336935"
+        },
+        {
+          "file": "packages/example/package.json",
+          "hash": "6409507681380935911",
+          "deps": [
+            "npm:@tailwindcss/postcss",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@vitejs/plugin-react",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:vite",
+            "@lemon-design-xx/core",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "packages/example/postcss.config.js",
+          "hash": "14886562286554270667"
+        },
+        {
+          "file": "packages/example/src/App.tsx",
+          "hash": "9465900699127560187"
+        },
+        {
+          "file": "packages/example/src/index.css",
+          "hash": "17116449879293776862"
+        },
+        {
+          "file": "packages/example/src/main.tsx",
+          "hash": "14288290212300200438"
+        },
+        {
+          "file": "packages/example/tailwind.config.js",
+          "hash": "11617144024352977803"
+        },
+        {
+          "file": "packages/example/tsconfig.json",
+          "hash": "14032556756270793734"
+        },
+        {
+          "file": "packages/example/tsconfig.node.json",
+          "hash": "8586866767247417612"
+        },
+        {
+          "file": "packages/example/vite.config.ts",
+          "hash": "15003539212984527232"
+        }
+      ],
+      "@lemon-design-xx/storybook": [
+        {
+          "file": "packages/storybook/.storybook/main.ts",
+          "hash": "5399878861195185716"
+        },
+        {
+          "file": "packages/storybook/.storybook/preview.tsx",
+          "hash": "4194395807111664237"
+        },
+        {
+          "file": "packages/storybook/CHANGELOG.md",
+          "hash": "17301094364403776116"
+        },
+        {
+          "file": "packages/storybook/package.json",
+          "hash": "9531109644106471621",
+          "deps": [
+            "npm:@storybook/addon-essentials",
+            "npm:@storybook/addon-interactions",
+            "npm:@storybook/addon-links",
+            "npm:@storybook/addon-onboarding",
+            "npm:@storybook/blocks",
+            "npm:@storybook/react",
+            "npm:@storybook/react-vite",
+            "npm:@storybook/test",
+            "npm:@storybook/test-runner",
+            "npm:@tailwindcss/postcss",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:autoprefixer",
+            "npm:http-server",
+            "npm:postcss",
+            "npm:storybook",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:vite",
+            "npm:@emotion/react",
+            "npm:@emotion/styled",
+            "@lemon-design-xx/core",
+            "npm:@mui/icons-material",
+            "npm:@mui/material",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "packages/storybook/postcss.config.js",
+          "hash": "15010738198080876262"
+        },
+        {
+          "file": "packages/storybook/src/stories/Button.stories.tsx",
+          "hash": "128186770931846389"
+        },
+        {
+          "file": "packages/storybook/src/stories/Card.stories.tsx",
+          "hash": "1313061763455401881"
+        },
+        {
+          "file": "packages/storybook/src/stories/Input.stories.tsx",
+          "hash": "5095816414218436691"
+        },
+        {
+          "file": "packages/storybook/src/styles.css",
+          "hash": "1280312894340369789"
+        },
+        {
+          "file": "packages/storybook/tailwind.config.js",
+          "hash": "2161635215133689631"
+        },
+        {
+          "file": "packages/storybook/tsconfig.json",
+          "hash": "13700065743111493425"
+        },
+        {
+          "file": "packages/storybook/vite.config.ts",
+          "hash": "8146587462051571623"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "5424519143878457759"
+}

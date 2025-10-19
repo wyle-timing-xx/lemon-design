@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@nx/js": "^21.6.5",
+    "@swc-node/register": "^1.11.1",
+    "@swc/core": "^1.13.5",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "lerna": "^8.0.0",
