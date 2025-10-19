@@ -1,11 +1,11 @@
 # 🍋 Lemon Design System
 
-一个基于 React + MUI + TailwindCSS 的现代组件库，使用 pnpm + Lerna 进行多包管理。
+一个基于 React + TailwindCSS 的现代组件库，使用 pnpm + Lerna 进行多包管理。
 
 ## ✨ 特性
 
-- 🎨 **现代化设计** - 基于 Material-UI 和 TailwindCSS 的美观组件
-- 📦 **多包管理** - 使用 Lerna 管理多个相关包
+- 🎨 **现代化设计** - 基于 TailwindCSS 的轻量级组件
+- 📦 **多包管理** - 使用 Lerna + Changesets 管理多个相关包
 - 🚀 **快速开发** - 集成 Storybook 进行组件开发和文档
 - 📱 **响应式** - 完全响应式设计，支持各种屏幕尺寸
 - 🎯 **TypeScript** - 完整的 TypeScript 支持
@@ -42,9 +42,9 @@ pnpm install
 pnpm dev
 
 # 或者单独启动某个包
-pnpm --filter @lemon-design-xx/core dev
-pnpm --filter @lemon-design-xx/storybook storybook
-pnpm --filter @lemon-design-xx/example dev
+pnpm --filter @lemon-design/core dev
+pnpm --filter @lemon-design/storybook storybook
+pnpm --filter @lemon-design/example dev
 ```
 
 ### 构建
@@ -54,13 +54,13 @@ pnpm --filter @lemon-design-xx/example dev
 pnpm build
 
 # 构建特定包
-pnpm --filter @lemon-design-xx/core build
+pnpm --filter @lemon-design/core build
 ```
 
 ## 📚 使用组件
 
 ```tsx
-import { Button, Card, Input } from '@lemon-design-xx/core';
+import { Button, Card, Input } from '@lemon-design/core';
 
 function App() {
   return (
@@ -95,7 +95,7 @@ function App() {
 
 ### Input 输入框
 
-基于 MUI TextField 的输入组件：
+原生输入框的增强版：
 
 - 支持多种变体
 - 内置验证和错误处理
@@ -105,9 +105,9 @@ function App() {
 
 - **React 18** - 用户界面库
 - **TypeScript** - 类型安全
-- **Material-UI** - 基础组件库
 - **TailwindCSS** - 样式框架
 - **Lerna** - 多包管理
+- **Changesets** - 版本和更新日志管理
 - **pnpm** - 包管理器
 - **Storybook** - 组件文档
 - **Rollup** - 构建工具
@@ -124,7 +124,37 @@ function App() {
 
 ### 主题定制
 
-组件库使用 TailwindCSS 进行样式定制，可以在 `tailwind.config.js` 中修改主题配置。
+组件库使用 TailwindCSS 进行样式定制，可以在 `tailwind.config.js` 中修改主题配置：
+
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: { /* 自定义主题色 */ },
+        // ...其他颜色
+      },
+      // ...其他主题配置
+    }
+  }
+}
+```
+
+### 版本管理
+
+使用 Changesets 进行版本管理：
+
+```bash
+# 创建变更记录
+pnpm changeset
+
+# 更新版本
+pnpm version-packages
+
+# 发布
+pnpm release
+```
 
 ## 📄 许可证
 
