@@ -4,9 +4,9 @@
   "private": true,
   "description": "Storybook for Lemon Design System",
   "scripts": {
-    "storybook": "storybook dev -p 6007",
-    "build-storybook": "storybook build",
-    "test-storybook": "test-storybook"
+    "storybook": "nx serve:storybook -p 6007",
+    "build-storybook": "nx build:storybook",
+    "test-storybook": "nx test:storybook"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",

@@ -2,71 +2,42 @@
   "version": "6.0",
   "nxVersion": "21.6.5",
   "pathMappings": {},
-  "nxJsonPlugins": [],
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/rollup/plugin",
+      "options": {
+        "buildTargetName": "rollup:build",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "vite:build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "devTargetName": "vite:dev",
+        "previewTargetName": "vite:preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    }
+  ],
   "pluginsConfig": {
     "@nx/js": {
       "analyzeSourceFiles": false
     }
   },
   "fileMap": {
-    "nonProjectFiles": [
-      {
-        "file": "version_bump.md",
-        "hash": "16411564933517986077"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "14003237394565843955"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "5148107720640753026"
-      },
-      {
-        "file": "CHANGELOG.md",
-        "hash": "12486242034443176788"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "414265049992887245"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "7587669035069447529"
-      },
-      {
-        "file": "PUBLISHING.md",
-        "hash": "7557042745888994171"
-      },
-      {
-        "file": "package.json",
-        "hash": "8066043519583371082"
-      },
-      {
-        "file": "抬版本的对比和选择.md",
-        "hash": "9282629080644776538"
-      },
-      {
-        "file": "PROJECT.md",
-        "hash": "3456648993066827082"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "9729484379540479494"
-      },
-      {
-        "file": "README.md",
-        "hash": "3988714984877528499"
-      },
-      {
-        "file": "nx.json",
-        "hash": "497218710141062764"
-      },
-      {
-        "file": ".eslintrc.js",
-        "hash": "5165836759484725621"
-      }
-    ],
     "projectFileMap": {
       "@lemon-design-xx/core": [
         {
@@ -143,7 +114,7 @@
         },
         {
           "file": "packages/core/package.json",
-          "hash": "11497835845905980193",
+          "hash": "103204675821800532",
           "deps": [
             "npm:react",
             "npm:react-dom",
@@ -159,7 +130,7 @@
             "npm:eslint",
             "npm:eslint-plugin-react",
             "npm:eslint-plugin-react-hooks",
-            "npm:jest",
+            "npm:jest@29.7.0",
             "npm:rollup",
             "npm:rollup-plugin-dts",
             "npm:rollup-plugin-peer-deps-external",
@@ -225,7 +196,7 @@
         },
         {
           "file": "packages/example/package.json",
-          "hash": "6409507681380935911",
+          "hash": "7311659325229488580",
           "deps": [
             "npm:@tailwindcss/postcss",
             "npm:@types/react",
@@ -240,7 +211,7 @@
             "npm:postcss",
             "npm:tailwindcss",
             "npm:typescript",
-            "npm:vite",
+            "npm:vite@5.4.20",
             "@lemon-design-xx/core",
             "npm:react",
             "npm:react-dom"
@@ -314,7 +285,7 @@
             "npm:storybook",
             "npm:tailwindcss",
             "npm:typescript",
-            "npm:vite",
+            "npm:vite@5.4.20",
             "npm:@emotion/react",
             "npm:@emotion/styled",
             "@lemon-design-xx/core",
@@ -357,7 +328,65 @@
           "hash": "8146587462051571623"
         }
       ]
-    }
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".eslintrc.js",
+        "hash": "5165836759484725621"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "5065528919635212885"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "12486242034443176788"
+      },
+      {
+        "file": "PROJECT.md",
+        "hash": "3456648993066827082"
+      },
+      {
+        "file": "PUBLISHING.md",
+        "hash": "7557042745888994171"
+      },
+      {
+        "file": "README.md",
+        "hash": "3988714984877528499"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "5148107720640753026"
+      },
+      {
+        "file": "nx.json",
+        "hash": "2725332050520039178"
+      },
+      {
+        "file": "package.json",
+        "hash": "17368482851551390280"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "10415855681715675648"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "414265049992887245"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "14003237394565843955"
+      },
+      {
+        "file": "version_bump.md",
+        "hash": "16411564933517986077"
+      },
+      {
+        "file": "抬版本的对比和选择.md",
+        "hash": "9282629080644776538"
+      }
+    ]
   },
-  "externalNodesHash": "5424519143878457759"
+  "externalNodesHash": "2264904276695848459"
 }
