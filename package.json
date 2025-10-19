@@ -9,19 +9,19 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "dev": "lerna run dev --stream",
-    "storybook": "lerna run storybook --scope=@lemon-design-xx/storybook",
-    "build-storybook": "lerna run build-storybook --scope=@lemon-design-xx/storybook",
+    "storybook": "lerna run storybook --scope=@lemon-design/storybook",
+    "build-storybook": "lerna run build-storybook --scope=@lemon-design/storybook",
     "test": "lerna run test",
     "clean": "lerna clean",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "pnpm build && changeset publish"
+    "version": "nx release version",
+    "publish": "nx release publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.7",
+    "@nx/js": "^21.6.5",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "lerna": "^8.0.0",
+    "nx": "^21.6.5",
     "typescript": "^5.0.0"
   },
   "engines": {

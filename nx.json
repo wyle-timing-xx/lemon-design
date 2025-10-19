@@ -1,0 +1,39 @@
+{
+  "extends": "nx/presets/npm.json",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint"]
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "dependsOn": ["build"]
+    }
+  },
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "packages/*",
+        "specifierSource": "package.json",
+        "releaseTagPattern": "v{version}",
+        "changelog": {
+          "workspaceChangelog": true,
+          "changelogPath": "CHANGELOG.md"
+        }
+      }
+    },
+    "publish": {
+      "dependsOn": ["version", "build"],
+      "executor": "@nx/js:release-publish"
+    }
+  }
+}
